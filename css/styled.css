@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
+* {margin: 0; padding: 0; text-align: center; font-size: 20px;}
+
+body{
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+/* 탭 메뉴 */
+.container{
+	margin: 0 auto;
+}
+
+ul.tabs{
+	z-index: 998;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	display: flex;
+}
+ul.tabs li{
+	z-index: 998;
+	background: none;
+	color: #BAAFCC;
+	display: inline-block;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	background: #EFE7FF;
+	border-bottom: 2px #7743DB solid;
+}
+
+ul.tabs li.current{
+	z-index: 998;
+	background: #fff;
+	color: #222;
+	border-bottom: none;
+}
+
+.tab-content{
+	display: none;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+
+/* 업로드 */
+.upload {
+	min-width: 600px;
+	min-height: 310px;
+	background: #EFE7FF;
+	border-radius: 20px;
+	border: #222 2px dashed;
+
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.upload img {
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.upload p {
+	position: absolute;
+	top: 62%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	white-space: nowrap;
+}
