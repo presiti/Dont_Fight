@@ -22,12 +22,34 @@
 
     <div id="tab-1" class="tab-content current">
       <div class="upload">
-        <img src="./images/upload_icon.png" alt="upload">
+        <img src="./images/Upload.png" alt="Upload">
         <p>이미지 또는 동영상을 업로드 해주세요</p>
       </div>
+
+      <div class="tips">
+        <img src="./images/Question-mark.png" alt="Question mark" id="upload-tip_btn">
+        <div class="upload_txt tip" style="display:none"> 이미지나 동영상 파일을 올리시면,<br>
+          인공지능이 쓰레기나 불법 주정차를<br>
+          인식해 줍니다.</div>
+      </div>
     </div>
-    <div id="tab-2" class="tab-content"><p>카메라</p></div>
+
+    <div id="tab-2" class="tab-content">
+      <video id="cameraview"></video>
+
+      <div class="tips">
+        <img src="./images/Question-mark.png" alt="Question mark" id="camera-tip_btn">
+        <div class="camera_txt tip" style="display:none"> 웹 캠으로  길가의 쓰레기 또는 불법<br>
+          주정차를 비추면 인공지능이 인식해 줍니다.
+      </div>
+    </div>
+
+
   </div>
+
+  <script>
+    mainInit();
+  </script>
 
   </body>
 </html>

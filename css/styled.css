@@ -9,6 +9,7 @@ body{
 	user-select:none
 }
 
+
 /* 탭 메뉴 */
 .container{
 	margin: 0 auto;
@@ -53,16 +54,18 @@ ul.tabs li.current{
 
 /* 업로드 */
 .upload {
-	min-width: 600px;
-	min-height: 310px;
+	width: 600px;
+	height: 310px;
 	background: #EFE7FF;
 	border-radius: 20px;
 	border: #222 2px dashed;
 
 	position: absolute;
-	top: 53%;
+	top: 54%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+	cursor: pointer;
 }
 
 .upload img {
@@ -79,4 +82,42 @@ ul.tabs li.current{
 	transform: translate(-50%, -50%);
 
 	white-space: nowrap;
+}
+
+
+/* 사용법 */
+.tips img{
+	position: absolute;
+	right: 28px;
+	bottom: 18px;
+	cursor: pointer;
+}
+
+.tip {
+	position: absolute;
+	right: 60px;
+	bottom: 18px;
+	width: 230px;
+	height: 54px;
+	padding: 5px 5px 7px 7px;
+
+	background: rgba(64, 64, 64, 0.5);
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+}
+
+
+
+/* 웹캠 */
+#cameraview {
+	width: 600px;
+	height: 310px;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 20px;
+    border: #222 2px dashed;
+	object-fit: cover;
 }
