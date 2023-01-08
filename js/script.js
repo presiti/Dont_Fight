@@ -55,3 +55,16 @@ function mainInit() {
       .catch(camInitFailed);
 
 }
+
+// 이미지, 동영상 업로드
+function setThumbnail(event) {
+  var reader = new FileReader();
+
+  reader.onload = function(event) {
+    var img = document.createElement("img");
+    img.setAttribute("src", event.target.result);
+    document.querySelector(".img-container").appendChild(img);
+  };
+
+  reader.readAsDataURL(event.target.files[0]);
+}

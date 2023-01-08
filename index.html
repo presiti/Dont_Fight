@@ -22,10 +22,10 @@
 
     <div id="tab-1" class="tab-content current">
       <label class="upload" for="input-file">
-        <img src="./images/Upload.png" alt="Upload">
-        <input type="file" id="input-file" style="display:none"
-       accept="image/png, image/jpeg, .mp4, .MOV">
+        <img src="./images/Upload.png" class="upload-img" alt="Upload">
+        <input type="file" id="input-file" style="display:none" accept="image/*, .mp4, .MOV, video/*" onchange="setThumbnail(event);">
         <p>이미지 또는 동영상을 업로드 해주세요</p>
+        <div class="img-container"></div>
       </label>
 
       <div class="tips">

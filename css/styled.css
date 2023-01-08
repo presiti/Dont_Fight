@@ -55,7 +55,7 @@ ul.tabs li.current{
 /* 업로드 */
 .upload {
 	width: 600px;
-	height: 310px;
+	height: 320px;
 	background: #EFE7FF;
 	border-radius: 20px;
 	border: #222 2px dashed;
@@ -68,16 +68,48 @@ ul.tabs li.current{
 	cursor: pointer;
 }
 
-.upload img {
+.upload-img {
 	position: absolute;
-	top: 38%;
+	top: 41%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+.img-container {
+	position: relative;
+	width: 600px;
+	height: 320px;
+	border-radius: 18px;
+	overflow: hidden;
+}
+
+.img-container img {
+	position: absolute;
+	min-width: 600px;
+	min-height: 320px;
+	max-width: 1000px;
+	max-height: 1000px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.img-container::-webkit-scrollbar {
+    width: 9px;
+	height: 9px;
+  }
+.img-container::-webkit-scrollbar-thumb {
+    background-color: #EFE7FF;
+    border-radius: 10px;
+  }
+.img-container::-webkit-scrollbar-track {
+    background-color: #BAAFCC;
+    border-radius: 10px;
+  }
+
 .upload p {
 	position: absolute;
-	top: 62%;
+	top: 63%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -112,7 +144,7 @@ ul.tabs li.current{
 /* 웹캠 */
 #cameraview {
 	width: 600px;
-	height: 310px;
+	height: 320px;
 	position: absolute;
 	top: 54%;
 	left: 50%;
